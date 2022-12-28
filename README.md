@@ -29,3 +29,12 @@ cd my-suckless
 ```bash
 startx
 ```
+## 重新编译安装
+有sudo权的普通用户执行
+```bash
+cd my-suckless
+./reinstall.sh all
+# 后面参数取决于想重新编译那一个，比如
+# ./reinstall.sh dwm
+# 这是重新编译dwm的
+```
