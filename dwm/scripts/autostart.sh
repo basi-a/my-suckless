@@ -5,7 +5,6 @@ while true; do
 	sleep 60
 done &
 numlockx &
-$HOME/.dwm/scripts/enable-fcitx.sh &
 fcitx5 -d &
 slstatus &
 xautolock -time 15 -locker slock &
