@@ -8,16 +8,9 @@ install(){
     sudo pacman -S picom feh numlockx xautolock
     # fcitx5
     sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-material-color
-    # add fcitx5 suppot to .xprofile
-    touch $HOME/.xprofile
-cat > $HOME/.xprofile <<'EOF'
-im=fcitx
-export GTK_IM_MODULE=$im
-export QT_IM_MODULE=$im
-export XMODIFIERS=@im=$im
-export INPUT_METHOD=$im
-export SDL_IM_MODULE=$im
-EOF
+    echo "If you added archlinuxcn and installed paru, please:"
+    echo "paru -S fcitx5-input-support"
+    echo "then relogin or reboot"
 }
 main(){
     install
