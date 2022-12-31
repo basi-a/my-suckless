@@ -37,6 +37,7 @@ static const Rule rules[] = {
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "chromium", NULL,       NULL,       1 << 8,       0,           -1 },
 	{ "wemeet",	  NULL,	      NULL,		  0,		    1,	         -1 },
+	{ "linuxqq",  NULL,	      NULL,		  0,		    1,	         -1 },
 	{ "dbeaver",  NULL,	      NULL,		  0,		    1,	         -1 },
 };
 
