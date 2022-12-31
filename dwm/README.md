@@ -47,10 +47,12 @@ Configuration
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
 *****************
-## 打了两个补丁
+## 打了四个补丁
 ```text
 dwm-systray-6.3.diff 			#系统托盘
 dwm-autostart-20210120-cb3f58a.diff	#脚本自启
+dwm-fixborders-6.2.diff
+dwm-alternativetags-6.3.diff
 ```
 alpha那个补丁没有打,似乎与系统托盘的补丁有冲突
 ## 关于脚本
