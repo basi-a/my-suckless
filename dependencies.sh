@@ -11,6 +11,8 @@ install(){
     echo "If you added archlinuxcn and installed paru, please:"
     echo "paru -S fcitx5-input-support"
     echo "then relogin or reboot"
+    echo "If you want to get the \"Times New Roman\" font, please:"
+    echo "paru -S ttf-ms-fonts"
 }
 main(){
     install
