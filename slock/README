@@ -22,6 +22,11 @@ Afterwards enter the following command to build and install slock
 Running slock
 -------------
 Simply invoke the 'slock' command. To get out of it, enter your password.
-
-
-打了个显示dwmlogo的补丁
+## 我的补丁
+```text
+slock-alternate-colors-20220921-35633d4.diff    # 在输入密码时，在两种蓝色之间切换屏幕颜色，以获得一些反馈
+slock-dpms-1.4.diff                             # 时间到了关闭显示器
+slock-dwmlogoandblurscreen-1.0.diff             # dwmlogo 锁屏像素透明
+slock-git-20161012-control-clear.diff           # 锁屏后监视器关闭唤起时的案件不断定为密码输入错误
+slock-quickcancel-1.4.diff                      # 看电影锁了屏，挪动鼠标解锁
+```
