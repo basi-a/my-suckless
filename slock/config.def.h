@@ -14,13 +14,13 @@ static const char *colorname[NUMCOLS] = {
 static const int failonclear = 1;
 
 /* time in seconds before the monitor shuts down */
-static const int monitortime = 20;
+static const int monitortime = 3000;
 
 /* allow control key to trigger fail on clear */
 static const int controlkeyclear = 1;
 
 /* time in seconds to cancel lock with mouse movement */
-static const int timetocancel = 5;
+static const int timetocancel = 1800;
 
 static const int logosize = 75;
 static const int logow = 12; /* Grid width and height for right center alignment*/
@@ -43,6 +43,6 @@ static XRectangle rectangles[9] = {
 /*Set blur radius*/
 static const int blurRadius=5;
 /*Enable Pixelation*/
-//#define PIXELATION
+#define PIXELATION
 /*Set pixelation radius*/
-static const int pixelSize=0;
+static const int pixelSize=2;
