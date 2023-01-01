@@ -20,7 +20,7 @@ static const int monitortime = 3000;
 static const int controlkeyclear = 1;
 
 /* time in seconds to cancel lock with mouse movement */
-static const int timetocancel = 1800;
+static const int timetocancel = 60;
 
 static const int logosize = 75;
 static const int logow = 12; /* Grid width and height for right center alignment*/
@@ -41,7 +41,7 @@ static XRectangle rectangles[9] = {
 /*Enable blur*/
 #define BLUR
 /*Set blur radius*/
-static const int blurRadius=5;
+static const int blurRadius=10;
 /*Enable Pixelation*/
 #define PIXELATION
 /*Set pixelation radius*/
