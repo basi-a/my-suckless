@@ -46,15 +46,17 @@ Configuration
 -------------
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
-*****************
 ## 打了四个补丁
+来自github [bakkeby/patches](https://raw.githubusercontent.com/bakkeby/patches/master/dwm/dwm-alpha-systray-6.3_full.diff)
 ```text
-dwm-systray-6.3.diff 			#系统托盘
-dwm-autostart-20210120-cb3f58a.diff	#脚本自启
-dwm-fixborders-6.2.diff
+dwm-alpha-systray-6.3_full.diff 		#dwm透明和系统托盘合并补丁
+```
+来自suckless官网的补丁
+```text
+dwm-autostart-20210120-cb3f58a.diff	        #脚本自启
 dwm-alternativetags-6.3.diff
 ```
-alpha那个补丁没有打,似乎与系统托盘的补丁有冲突
+
 ## 关于脚本
 ```bash
 cd my_dwm
