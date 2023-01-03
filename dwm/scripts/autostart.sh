@@ -1,7 +1,7 @@
 #!/bin/bash
 picom -b &
 while true; do
-	feh --bg-fill --randomize $HOME/.config/wallpapper/*
+	feh --bg-fill --randomize $HOME/.config/wallpaper/*
 	sleep 60
 done &
 numlockx &
