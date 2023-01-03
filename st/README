@@ -43,4 +43,7 @@ st-focus-20200731-43a395a.diff      # st 透明和聚焦效果
 st-scrollback-0.8.5.diff            
 st-scrollback-reflow-0.8.5.diff         
 st-scrollback-mouse-altscreen-20220127-2c5edf2.diff # 鼠标滚动，前两个是前置补丁
+simple_plumb-0.8.5.diff             # 右键点击将文本从st复制出来
+simple_plumb_double_click-0.8.5.diff
+st-rightclickpaste-0.8.2.diff       # 右键将剪切板内容粘贴到st
 ```
