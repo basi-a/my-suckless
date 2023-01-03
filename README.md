@@ -28,3 +28,24 @@ cd my-suckless
 后面参数取决于想重新编译那一个，比如
 `./reinstall.sh dwm`
 这是重新编译dwm的
+
+## 自定义快捷键
+除了自定义的全是默认的快捷键
+### dwm
+```text
+alt+shift+e 打开dwmexit菜单
+alt+shift+l 使用slock锁屏
+alt+r       打开rofi
+alt+w       打开浏览器  
+alt+shift+s 打开flameshot
+alt+F1      静音
+alt+F2      减小音量
+alt+F3      增大音量
+alt+F4      降低亮度
+alt+F5      提升亮度
+```
+### st
+```text
+鼠标右键选择文本复制
+鼠标右键粘贴
+```
