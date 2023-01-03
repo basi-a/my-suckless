@@ -3,7 +3,7 @@ install(){
     # fonts
     sudo pacman -S ttf-sourcecodepro-nerd wqy-zenhei
     sudo pacman -S nerd-fonts noto-fonts noto-fonts-cjk noto-fonts-emoji
-    sudo pacman -S ttf-font-awesome otf-font-awesome awesome-terminal-fonts ttf-sarasa-gothic
+    sudo pacman -S ttf-font-awesome otf-font-awesome awesome-terminal-fonts powerline-fonts ttf-sarasa-gothic
     # software package
     sudo pacman -S picom feh numlockx xautolock
     # fcitx5
