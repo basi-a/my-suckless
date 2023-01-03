@@ -5,6 +5,7 @@
 #include <locale.h>
 #include <signal.h>
 #include <sys/select.h>
+#include <sys/wait.h>
 #include <time.h>
 #include <unistd.h>
 #include <libgen.h>
@@ -176,6 +177,7 @@ static void resize(XEvent *);
 static void focus(XEvent *);
 static uint buttonmask(uint);
 static int mouseaction(XEvent *, uint);
+static void plumb(char *);
 static void brelease(XEvent *);
 static void bpress(XEvent *);
 static void bmotion(XEvent *);
@@ -219,6 +221,7 @@ static void (*handler[LASTEvent])(XEvent *) = {
 };
 
 /* Globals */
+static int plumbsel;
 static DC dc;
 static XWindow xw;
 static XSelection xsel;
@@ -507,6 +510,11 @@ bpress(XEvent *e)
 		xsel.tclick1 = now;
 
 		selstart(evcol(e), evrow(e), snap);
+
+		if (snap == SNAP_WORD && match(PLUMBMASK, e->xbutton.state)) {
+			xsetsel(getsel());
+			plumb(xsel.primary);
+		}
 	}
 }
 
@@ -703,6 +711,37 @@ xsetsel(char *str)
 }
 
 void
+plumbinit()
+{
+	for(plumbsel = 0; plumb_cmd[plumbsel]; plumbsel++);
+}
+
+void
+plumb(char *sel) {
+	if (sel == NULL)
+		return;
+	char cwd[PATH_MAX];
+	pid_t child;
+	if (subprocwd(cwd) != 0)
+		return;
+
+	plumb_cmd[plumbsel] = sel;
+
+	switch(child = fork()) {
+		case -1:
+			return;
+		case 0:
+			if (chdir(cwd) != 0)
+				exit(1);
+			if (execvp(plumb_cmd[0], plumb_cmd) == -1)
+				exit(1);
+			exit(0);
+		default:
+			waitpid(child, NULL, 0);
+	}
+}
+
+void
 brelease(XEvent *e)
 {
 	int btn = e->xbutton.button;
@@ -719,6 +758,8 @@ brelease(XEvent *e)
 		return;
 	if (btn == Button1)
 		mousesel(e, 1);
+	else if (e->xbutton.button == Button3)
+		plumb(xsel.primary);
 }
 
 void
@@ -2132,6 +2173,7 @@ main(int argc, char *argv[])
 	} ARGEND;
 
 run:
+	plumbinit();
 	if (argc > 0) /* eat all remaining arguments */
 		opt_cmd = argv;
 
