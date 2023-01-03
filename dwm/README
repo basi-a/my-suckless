@@ -55,6 +55,7 @@ dwm-alpha-systray-6.3_full.diff 		#dwm透明和系统托盘合并补丁
 ```text
 dwm-autostart-20210120-cb3f58a.diff	        #脚本自启
 dwm-alternativetags-6.3.diff
+dwm-exitmenu-6.3.diff                       #alt+shift+e退出菜单
 ```
 
 ## 关于脚本
