@@ -756,13 +756,15 @@ brelease(XEvent *e)
 
 	if (mouseaction(e, 1))
 		return;
+	//Left mouse button
 	if (btn == Button1)
 		mousesel(e, 1);
+	//Middle mouse button
 	else if (btn == Button2)
 		selpaste(NULL);
-	else if (e->xbutton.button == Button3){
+	//Right mouse button
+	else if (btn == Button3)
 		plumb(xsel.primary);
-	}
 }
 
 void
