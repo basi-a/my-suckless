@@ -20,13 +20,8 @@ slstatus(){
     cd ../
 }
 autostart_and_xinitrc(){
-    mkdir $HOME/.dwm
-    cp -r dwm/scripts $HOME/.dwm/scripts
-    cd $HOME/.dwm/scripts && mv $HOME/.dwm/scripts/autostart.sh ../ && cd $HOME
-    mkdir $HOME/.config/wallpaper
-    touch $HOME/.xinitrc
-    echo "export LANG="zh_CN.UTF-8"" >> $HOME/.xinitrc
-    echo "exec dwm" >> $HOME/.xinitrc
+    ./dependencies.sh
+    ./dotfiles-use.sh
 }
 main(){
     dwm

@@ -8,11 +8,14 @@ install(){
     sudo pacman -S picom feh numlockx xautolock
     # fcitx5
     sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-material-color
-    echo "If you added archlinuxcn and installed paru, please:"
-    echo "paru -S fcitx5-input-support"
-    echo "then relogin or reboot"
-    echo "If you want to get the \"Times New Roman\" font, please:"
-    echo "paru -S ttf-ms-fonts"
+    # icon
+    sudo pacman -S papirus-icon-theme
+    
+    # gtk-theme from archlinuxcn
+    sudo pacman -S vimix-gtk-themes
+
+    # if want get the "Time New Romen" font
+    # paru -S ttf-ms-fonts
 }
 main(){
     install
