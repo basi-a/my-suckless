@@ -758,9 +758,11 @@ brelease(XEvent *e)
 		return;
 	if (btn == Button1)
 		mousesel(e, 1);
-	else if (e->xbutton.button == Button3)
+	else if (btn == Button2)
 		selpaste(NULL);
+	else if (e->xbutton.button == Button3){
 		plumb(xsel.primary);
+	}
 }
 
 void
