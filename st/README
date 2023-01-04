@@ -45,5 +45,24 @@ st-scrollback-reflow-0.8.5.diff
 st-scrollback-mouse-altscreen-20220127-2c5edf2.diff # 鼠标滚动，前两个是前置补丁
 simple_plumb-0.8.5.diff             # 右键点击将文本从st复制出来
 simple_plumb_double_click-0.8.5.diff
-st-rightclickpaste-0.8.2.diff       # 右键将剪切板内容粘贴到st
+# 对照补丁手动改的代码，没用patch，本来应该是右键粘贴的，自行写成了中键粘贴
+st-rightclickpaste-0.8.2.diff       # 中键键将剪切板内容粘贴到st
+```
+```c
+//st-rightclickpaste-0.8.2.diff 手动改部分
+void
+brelease(XEvent *e)
+{
+	......
+    
+	//Left mouse button
+	if (btn == Button1)
+		mousesel(e, 1);
+	//Middle mouse button
+	else if (btn == Button2)
+		selpaste(NULL);
+	//Right mouse button
+	else if (btn == Button3)
+		plumb(xsel.primary);
+}
 ```
