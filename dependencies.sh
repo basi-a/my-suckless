@@ -11,8 +11,8 @@ install(){
     # icon
     sudo pacman -S papirus-icon-theme
     
-    # gtk-theme from archlinuxcn
-    sudo pacman -S vimix-gtk-themes
+    # gtk-theme paru from archlinuxcn
+    sudo pacman -S vimix-gtk-themes paru
 
     # if want get the "Time New Romen" font
     # paru -S ttf-ms-fonts
