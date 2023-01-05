@@ -13,7 +13,7 @@ cd my-suckless
 ./use-dotfiles.sh
 ```
 ## 编译安装
-添加了archlinuxcn源后，可直接安装suckless全家桶; 若使用前面的脚本解决了依赖，可直接使用下面的重新编译脚本
+添加了archlinuxcn源后，可直接安装suckless全家桶; 若使用前面的脚本解决了依赖，可直接使用下面的重新编译脚本,跳过调用解决依赖和应用dotfiles的脚本的函数
 ```bash
 cd my-suckless
 ./suckless-install.sh
