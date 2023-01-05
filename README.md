@@ -1,6 +1,6 @@
 # my-suckless
 ## 介绍
-我自己打好补丁自用的的suckless全家桶， 包含（dwm, st, slock, slstatus）;
+我自己打好补丁自用的的suckless全家桶， 包含（dwm, st, slock, slstatus）,应用于archlinux;
 之前分的好几个仓库就都删除了;
 以下操作确保当前用户是可以使用sudo提权的普通用户
 ##  依赖和dotfile
@@ -50,3 +50,5 @@ alt+F5      提升亮度
 鼠标右键选择文本复制
 鼠标中键(滑轮)粘贴
 ```
+# 截图
+![屏幕截图](Screenshot.png)
