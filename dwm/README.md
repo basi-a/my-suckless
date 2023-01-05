@@ -66,7 +66,16 @@ cd ~/.dwm/scripts
 mv autostart.sh ../
 ```
 ## 关于背光
-关于笔记本背光调节,需要把用户添加到video组,还要编辑`/etc/udev/rules.d/backlight.rules`规则，详见[archwiki blacklight](https://wiki.archlinux.org/title/Backlight)
+关于笔记本背光调节,需要把用户添加到video组
+```bash
+sudo usermod -a -G video username
+```
+还要编辑`/etc/udev/rules.d/backlight.rules`规则,对于intel cpu用户
+```text
+RUN+="/bin/chgrp video /sys/class/backlight/intel_backlight/brightness"
+RUN+="/bin/chmod g+w /sys/class/backlight/intel_backlight/brightness"
+```
+详见[archwiki blacklight](https://wiki.archlinuxcn.org/wiki/Backlight)
 ## 关于字体
 ```bash
 sudo pacman -S ttf-sourcecodepro-nerd wqy-zenhei
