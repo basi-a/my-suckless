@@ -19,15 +19,15 @@ slstatus(){
     sudo make && sudo make clean install
     cd ../
 }
-autostart_and_xinitrc(){
+dependencies_and_dotfiles(){
     ./dependencies.sh
-    ./dotfiles-use.sh
+    ./use-dotfiles.sh
 }
 main(){
     dwm
     st
     slock
     slstatus
-    autostart_and_xinitrc
+    dependencies_and_dotfiles
 }
 main
