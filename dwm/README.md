@@ -56,15 +56,12 @@ dwm-alpha-systray-6.3_full.diff 		#dwm透明和系统托盘合并补丁
 dwm-autostart-20210120-cb3f58a.diff	        #脚本自启
 dwm-alternativetags-6.3.diff
 dwm-exitmenu-6.3.diff                       #alt+shift+e退出菜单
+dwm-dmenumatchtop-6.2.diff                  #随着topbar的位置更新dmenu的位置
+dwm-cursorwarp-6.3.diff                     #自动移动鼠标到焦点窗口中间
 ```
 
 ## 关于脚本
-```bash
-cd my_dwm
-cp -r scripts ~/.dwm/scripts
-cd ~/.dwm/scripts
-mv autostart.sh ../
-```
+读取`$HOME/.dwm/autostart.sh`随之dwm自启动应用
 ## 关于背光
 关于笔记本背光调节,需要把用户添加到video组
 ```bash
