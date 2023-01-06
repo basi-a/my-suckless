@@ -46,7 +46,7 @@ Configuration
 -------------
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
-## 打了四个补丁
+## 打了以下的补丁
 来自github [bakkeby/patches](https://raw.githubusercontent.com/bakkeby/patches/master/dwm/dwm-alpha-systray-6.3_full.diff)
 ```text
 dwm-alpha-systray-6.3_full.diff 		#dwm透明和系统托盘合并补丁
@@ -58,6 +58,8 @@ dwm-alternativetags-6.3.diff
 dwm-exitmenu-6.3.diff                       #alt+shift+e退出菜单
 dwm-dmenumatchtop-6.2.diff                  #随着topbar的位置更新dmenu的位置
 dwm-cursorwarp-6.3.diff                     #自动移动鼠标到焦点窗口中间
+dwm-vanitygaps-20200610-f09418b.diff        #窗口间缝隙，smartgaps=1时 会仅有一个窗口时自动去掉缝隙
+dwm-rotatestack-20161021-ab9571b.diff       #将栈中的窗口挪到主窗口
 ```
 
 ## 关于脚本
