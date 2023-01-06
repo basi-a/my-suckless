@@ -23,14 +23,12 @@ cd my-suckless
 startx
 ```
 ## 重新编译安装xxx
-这种方式会删除config.h, 修改config.def.h进行更改配置
+这种方式会删除config.h, 修改config.def.h进行更改配置,
+后面参数取决于想重新编译那一个，比如重新编译dwm`./reinstall.sh dwm`
 ```bash
 cd my-suckless
 ./reinstall.sh all
 ```
-后面参数取决于想重新编译那一个，比如
-`./reinstall.sh dwm`
-这是重新编译dwm的
 或者，编辑config.h, 然后cd到对应的目录, 重新编译
 ```bash
 sudo make clean install
