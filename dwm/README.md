@@ -60,6 +60,7 @@ dwm-dmenumatchtop-6.2.diff                  #随着topbar的位置更新dmenu的
 dwm-cursorwarp-6.3.diff                     #自动移动鼠标到焦点窗口中间
 dwm-vanitygaps-20200610-f09418b.diff        #窗口间缝隙，smartgaps=1时 会仅有一个窗口时自动去掉缝隙
 dwm-rotatestack-20161021-ab9571b.diff       #将栈中的窗口挪到主窗口
+dwm-vanitygaps-20200610-f09418b.diff        #alt+left/right切换前后标签
 ```
 
 ## 关于脚本
