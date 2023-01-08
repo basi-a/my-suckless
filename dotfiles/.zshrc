@@ -112,3 +112,6 @@ source /usr/share/nvm/init-nvm.sh
 if [ -d "$HOME/go/bin" ];then
   export PATH="$PATH:$HOME/go/bin"
 fi
+if [ -d "$HOME/flutter/bin" ];then
+  export PATH="$PATH:$HOME/flutter/bin"
+fi
