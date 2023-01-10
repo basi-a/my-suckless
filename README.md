@@ -47,7 +47,7 @@ alt+F2          减小音量
 alt+F3          增大音量
 alt+F4          降低亮度
 alt+F5          提升亮度
-
+alt+[xk_grave]       打开位于屏幕正中的小终端默认st， 按第二遍隐藏 ; xk_grave 是tab上面，esc下面的倒引号那个键
 #标签、窗口类
 alt+shift+j/k   将栈中窗口挪到主窗口
 alt+left/right  切换前一个或下一个tag
