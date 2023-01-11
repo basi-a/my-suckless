@@ -47,9 +47,10 @@ Configuration
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
 ## 打了以下的补丁
-来自github [bakkeby/patches](https://raw.githubusercontent.com/bakkeby/patches/master/dwm/dwm-alpha-systray-6.3_full.diff)
+来自github [bakkeby/patches](https://github.com/bakkeby/patches)
 ```text
 dwm-alpha-systray-6.3_full.diff 		#dwm透明和系统托盘合并补丁
+dwm-steam-6.3.diff                      #修复steam及打开steam游戏的窗口
 ```
 来自suckless官网的补丁
 ```text
