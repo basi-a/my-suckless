@@ -4,4 +4,5 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export INPUT_METHOD=fcitx
 export SDL_IM_MODULE=fcitx
-exec dwm
+# no log echo
+exec dwm >/dev/null 2>&1
