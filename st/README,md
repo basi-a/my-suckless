@@ -47,6 +47,10 @@ simple_plumb-0.8.5.diff             # 右键点击将文本从st复制出来
 simple_plumb_double_click-0.8.5.diff
 # 对照补丁手动改的代码，没用patch，本来应该是右键粘贴的，自行写成了中键粘贴
 st-rightclickpaste-0.8.2.diff       # 中键键将剪切板内容粘贴到st
+
+st-netwmicon-0.8.5-v2.diff
+st-desktopentry-0.8.5.diff			# 这俩为st生成desktop文件，以及解决无图标问题
+st-nano-shortcuts-support-0.8.5.diff# 支持nano的按键
 ```
 ```c
 //st-rightclickpaste-0.8.2.diff 手动改部分
