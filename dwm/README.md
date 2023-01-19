@@ -57,6 +57,7 @@ dwm-steam-6.3.diff                      #修复steam及打开steam游戏的窗�
 dwm-autostart-20210120-cb3f58a.diff	        #脚本自启
 dwm-alternativetags-6.3.diff
 dwm-exitmenu-6.3.diff                       #alt+shift+e退出菜单
+dwm-restartsig-20180523-6.2.diff            #使得exitmenu的restart可用
 dwm-dmenumatchtop-6.2.diff                  #随着topbar的位置更新dmenu的位置
 dwm-cursorwarp-6.3.diff                     #自动移动鼠标到焦点窗口中间
 dwm-vanitygaps-20200610-f09418b.diff        #窗口间缝隙，smartgaps=1时 会仅有一个窗口时自动去掉缝隙
