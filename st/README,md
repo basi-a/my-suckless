@@ -51,6 +51,8 @@ st-rightclickpaste-0.8.2.diff       # 中键键将剪切板内容粘贴到st
 st-netwmicon-0.8.5-v2.diff
 st-desktopentry-0.8.5.diff			# 这俩为st生成desktop文件，以及解决无图标问题
 st-nano-shortcuts-support-0.8.5.diff# 支持nano的按键
+
+st-hidecursor-0.8.3.diff			# 输入时隐藏鼠标
 ```
 ```c
 //st-rightclickpaste-0.8.2.diff 手动改部分
