@@ -16,12 +16,19 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray             = 1;   /* 0 means no systray */
 static const char *fonts[]          = { "SauceCodePro Nerd Font:size=14:style=Regular" };
 static const char dmenufont[]       = "SauceCodePro Nerd Font:size=14:style=Regular";
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
-static const unsigned int baralpha = 0xb4;
+// default theme
+// static const char col_gray1[]       = "#222222";
+// static const char col_gray2[]       = "#444444";
+// static const char col_gray3[]       = "#bbbbbb";
+// static const char col_gray4[]       = "#eeeeee";
+// static const char col_cyan[]        = "#005577";
+// dracula theme
+static const char col_gray1[]       = "#282a36";
+static const char col_gray2[]       = "#ffb86c";
+static const char col_gray3[]       = "#ff79c6";
+static const char col_gray4[]       = "#ffb86c";
+static const char col_cyan[]        = "#282a36";
+static const unsigned int baralpha = 0xdc;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
