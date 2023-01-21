@@ -55,6 +55,7 @@ st-nano-shortcuts-support-0.8.5.diff# 支持nano的按键
 st-hidecursor-0.8.3.diff			# 输入时隐藏鼠标
 st-ligatures-alpha-scrollback-ringbuffer-20221120-0.9.diff # 连字支持
 st-appsync-20200618-b27a383.diff    # appsync 由于我的st是clone的st-master ,所以前置的sync补丁也用不着打
+st-blinking_cursor-20211116-2f6e597.diff # 更多光标类型
 ```c
 //st-rightclickpaste-0.8.2.diff 手动改部分
 void
