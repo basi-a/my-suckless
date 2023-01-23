@@ -1,0 +1,17 @@
+require("plugins.plugins")
+require("core.options")
+require("core.keymaps")
+
+-- 插件
+require("plugins/config/dracula")
+require("plugins/config/lualine")
+require("plugins/config/bufferline")
+require("plugins/config/treesitter")
+require("plugins/config/lsp")
+require("plugins/config/cmp")
+require("plugins/config/comment")
+require("plugins/config/autopairs")
+require("plugins/config/gitsigns")
+require("plugins/config/nvim-tree")
+require("plugins/config/telescope")
+require("plugins/config/transparent")
