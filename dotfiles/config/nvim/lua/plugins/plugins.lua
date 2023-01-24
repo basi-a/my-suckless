@@ -45,6 +45,8 @@ return require('packer').startup(function(use)
 
   use "lewis6991/gitsigns.nvim" -- 左则git提示
 
+  -- markdown 预览
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
   use {
   'nvim-lualine/lualine.nvim', --状态栏
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
