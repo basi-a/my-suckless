@@ -3,7 +3,6 @@ vim.g.mapleader = " "
 local keymap = vim.keymap
 
 -- ---------- 插入模式 ---------- ---
-keymap.set("i", "jk", "<ESC>")
 
 -- ---------- 视觉模式 ---------- ---
 -- 单行或多行移动
@@ -22,6 +21,16 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 keymap.set("n", "<C-L>", ":bnext<CR>")
 keymap.set("n", "<C-H>", ":bprevious<CR>")
 
+-- crtl+s 保存 ctrl+wq 保存退出 crtl+qq 强制退出不保存
+keymap.set("n", "<C-S>", ":w<CR>")
+keymap.set("n", "<leader>wq", ":wq<CR>")
+keymap.set("n", "<leader>qq", ":q!<CR>")
+
 -- ---------- 插件 ---------- ---
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+-- markdown preview
+keymap.set("n", "<leader>mp", ":MarkdownPreview<CR>")
+keymap.set("n", "<leader>ms", ":MarkdownPreviewStop<CR>")
+keymap.set("i", "<leader>mp", ":MarkdownPreview<CR>")
+keymap.set("i", "<leader>ms", ":MarkdownPreviewStop<CR>")
