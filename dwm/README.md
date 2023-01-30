@@ -63,7 +63,7 @@ dwm-cursorwarp-6.3.diff                     #自动移动鼠标到焦点窗口�
 dwm-vanitygaps-20200610-f09418b.diff        #窗口间缝隙，smartgaps=1时 会仅有一个窗口时自动去掉缝隙
 dwm-rotatestack-20161021-ab9571b.diff       #将栈中的窗口挪到主窗口
 dwm-vanitygaps-20200610-f09418b.diff        #alt+left/right切换前后标签
-dwm-scratchpad-20221102-ba56fe9.diff        #super+tab上面那个倒引号的键， 打开位于屏幕正中的小终端默认st， 按第二遍隐藏 
+dwm-scratchpad-20221102-ba56fe9.diff        #alt+tab上面那个倒引号的键， 打开位于屏幕正中的小终端默认st， 按第二遍隐藏 
 ```
 
 ## 关于脚本

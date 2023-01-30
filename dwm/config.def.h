@@ -22,7 +22,7 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
-static const unsigned int baralpha = 0xc8;
+static const unsigned int baralpha = 0x96;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -107,7 +107,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_F4,     spawn,          {.v = lightdown } },
 	{ MODKEY,                       XK_F5,     spawn,          {.v = lightup } },
 	{ MODKEY,                       XK_r,      spawn,          {.v = roficmd } },
-	{ Mod4Mask,                     XK_grave,  togglescratch,  {.v = scratchpadcmd } },
+	{ MODKEY,                       XK_Escape, togglescratch,  {.v = scratchpadcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_k,      rotatestack,    {.i = -1 } },
