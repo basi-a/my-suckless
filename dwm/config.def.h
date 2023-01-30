@@ -107,7 +107,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_F4,     spawn,          {.v = lightdown } },
 	{ MODKEY,                       XK_F5,     spawn,          {.v = lightup } },
 	{ MODKEY,                       XK_r,      spawn,          {.v = roficmd } },
-	{ MODKEY,                       XK_grave,  togglescratch,  {.v = scratchpadcmd } },
+	{ Mod4Mask,                     XK_grave,  togglescratch,  {.v = scratchpadcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_k,      rotatestack,    {.i = -1 } },
