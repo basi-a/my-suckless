@@ -240,6 +240,8 @@ colors:
     magenta: '#ff92df'
     cyan: '#a4ffff'
     white: '#ffffff'
+  window:
+    opacity: 0.7
 #colors:
   # Default colors
   #primary:
@@ -386,7 +388,7 @@ colors:
   # Whether or not `window.opacity` applies to all cell backgrounds or only to
   # the default background. When set to `true` all cells will be transparent
   # regardless of their background color.
-  transparent_background_colors: true
+  #transparent_background_colors: true
 
 # Bell
 #
