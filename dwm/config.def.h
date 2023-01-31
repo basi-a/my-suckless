@@ -49,6 +49,9 @@ static const Rule rules[] = {
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 	{ "wemeet",   NULL,       NULL,       0,            1,           -1 },
+	{ "virtualbox",   NULL,       NULL,       0,            1,           -1 },
+	{ "steam",   NULL,       NULL,       0,            1,           -1 },
+	{ "steam-app",   NULL,       NULL,       0,            1,           -1 },
 	{ "minecraft-launcher",   NULL,       NULL,       0,            1,           -1 },
 };
 

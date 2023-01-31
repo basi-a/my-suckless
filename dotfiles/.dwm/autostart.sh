@@ -6,5 +6,6 @@ while true; do
 done &
 numlockx &
 fcitx5 -d &
+blueman-applet &
 slstatus &
 xautolock -time 15 -locker slock &
