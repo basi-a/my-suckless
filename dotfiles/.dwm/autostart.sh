@@ -8,5 +8,6 @@ numlockx &
 fcitx5 -d &
 pamac-tray &
 blueman-applet &
+nm-applet &
 slstatus &
 xautolock -time 15 -locker slock &
