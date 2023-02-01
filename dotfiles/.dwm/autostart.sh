@@ -6,6 +6,7 @@ while true; do
 done &
 numlockx &
 fcitx5 -d &
+pamac-tray &
 blueman-applet &
 slstatus &
 xautolock -time 15 -locker slock &
