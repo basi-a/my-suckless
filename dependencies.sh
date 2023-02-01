@@ -12,8 +12,8 @@ install(){
     sudo pacman -S papirus-icon-theme
     # nm-applet blueman-applet
     sudo pacman -S network-manager-applet blueman
-    # gtk-theme paru from archlinuxcn
-    sudo pacman -S vimix-gtk-themes paru
+    # gtk-theme paru pamac from archlinuxcn
+    sudo pacman -S vimix-gtk-themes paru pamac
 
     # if want get the "Time New Romen" font
     # paru -S ttf-ms-fonts
