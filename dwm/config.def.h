@@ -48,6 +48,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "scrcpy",	  NULL,		  NULL,       0,            1,           -1 },
 	{ "wemeet",   NULL,       NULL,       0,            1,           -1 },
 	{ "virtualbox",   NULL,       NULL,       0,            1,           -1 },
 	{ "minecraft-launcher",   NULL,       NULL,       0,            1,           -1 },
