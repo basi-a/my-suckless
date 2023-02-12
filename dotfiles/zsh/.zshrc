@@ -113,6 +113,7 @@ source /usr/share/nvm/init-nvm.sh
 
 if [ -d "$HOME/go/bin" ];then
   export PATH="$PATH:$HOME/go/bin"
+  export GOPROXY="https://proxy.golang.com.cn,direct"
 fi
 if [ -d "$HOME/flutter/bin" ];then
   export PATH="$PATH:$HOME/flutter/bin"
