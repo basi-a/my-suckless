@@ -8,6 +8,8 @@ install(){
     sudo pacman -S picom feh numlockx xautolock dmenu rofi gd
     # fcitx5
     sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-material-color
+    # icon
+    paru -S papirus-icon-theme
     # nm-applet blueman-applet
     sudo pacman -S network-manager-applet blueman
     # gtk-theme paru pamac from archlinuxcn
