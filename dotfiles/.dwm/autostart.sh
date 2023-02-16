@@ -10,4 +10,5 @@ pamac-tray &
 blueman-applet &
 nm-applet &
 slstatus &
+wmname LG3D &
 xautolock -time 15 -locker slock &

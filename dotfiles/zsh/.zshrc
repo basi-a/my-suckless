@@ -115,8 +115,8 @@ if [ -d "$HOME/go/bin" ];then
   export PATH="$PATH:$HOME/go/bin"
   export GOPROXY="https://proxy.golang.com.cn,direct"
 fi
-if [ -d "$HOME/flutter/bin" ];then
-  export PATH="$PATH:$HOME/flutter/bin"
+if [ -d "/opt/flutter/bin" ];then
+  export PATH="$PATH:/opt/flutter/bin"
   export PUB_HOSTED_URL=https://pub.flutter-io.cn
   export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 fi
