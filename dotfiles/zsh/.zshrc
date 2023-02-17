@@ -117,6 +117,7 @@ if [ -d "$HOME/go/bin" ];then
 fi
 if [ -d "/opt/flutter/bin" ];then
   export PATH="$PATH:/opt/flutter/bin"
+  export CHROME_EXECUTABLE=$(where chromium)
   export PUB_HOSTED_URL=https://pub.flutter-io.cn
   export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 fi
