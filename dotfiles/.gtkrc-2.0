@@ -1,3 +1,4 @@
 gtk-icon-theme-name = "Papirus"
 gtk-theme-name = "vimix-light-grey"
 gtk-font-name = "SauceCodePro Nerd Font 11"
+gtk-modules=appmenu-gtk-module
