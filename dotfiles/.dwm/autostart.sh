@@ -11,3 +11,4 @@ nm-applet &
 slstatus &
 wmname LG3D &
 xautolock -time 15 -locker slock &
+/usr/lib/pam_kwallet_init &
