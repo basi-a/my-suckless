@@ -1,6 +1,6 @@
 #!/bin/bash
 ln-sf(){
-    path="`pwd`"
+    path=$(pwd)
     ln -sf $path/dotfiles/config/* $HOME/.config
     ln -sf $path/dotfiles/.dwm $HOME
     ln -sf $path/dotfiles/.cargo/config $HOME/.cargo/config
