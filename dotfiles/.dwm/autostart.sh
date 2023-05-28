@@ -6,7 +6,6 @@ while true; do
 done &
 numlockx &
 fcitx5 -d &
-pamac-tray &
 blueman-applet &
 nm-applet &
 slstatus &
