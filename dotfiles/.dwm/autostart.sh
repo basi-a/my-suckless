@@ -10,5 +10,5 @@ blueman-applet &
 nm-applet &
 slstatus &
 wmname LG3D &
-xautolock -time 15 -locker slock &
+xautolock -time 5 -locker slock &
 /usr/lib/pam_kwallet_init &
