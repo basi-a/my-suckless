@@ -1,26 +1,26 @@
 #!/bin/bash
 reinstall_dwm(){
-    cd dwm
+    cd dwm || exit
     sudo rm config.h
     sudo make clean install && cd ../
 }
 reinstall_st(){
-    cd st
+    cd st || exit
     sudo rm config.h
     sudo make clean install && cd ../
 }
 reinstall_slstatus(){
-    cd slstatus
+    cd slstatus || exit
     sudo rm config.h
     sudo make clean install && cd ../
 }
 reinstall_slock(){
-    cd slock
+    cd slock || exit
     sudo rm config.h
     sudo make clean install && cd ../
 }
 reinstall_dmenu(){
-    cd dmenu
+    cd dmenu || exit
     sudo rm config.h
     sudo make clean install && cd ../
 }

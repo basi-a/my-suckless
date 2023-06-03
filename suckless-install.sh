@@ -1,26 +1,26 @@
 #!/bin/bash
 dwm(){
-    cd dwm
+    cd dwm || exit
     sudo make clean install
     cd ../
 }
 st(){
-    cd st
+    cd st || exit
     sudo make clean install
     cd ../
 }
 slock(){
-    cd slock
+    cd slock || exit
     sudo make clean install
     cd ../
 }
 slstatus(){
-    cd slstatus
+    cd slstatus || exit
     sudo make clean install
     cd ../
 }
 dmenu(){
-    cd dmenu
+    cd dmenu || exit
     sudo make clean install
 }
 dependencies_and_dotfiles(){
