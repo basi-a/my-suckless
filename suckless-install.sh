@@ -19,6 +19,10 @@ slstatus(){
     sudo make clean install
     cd ../
 }
+dmenu(){
+    cd dmenu
+    sudo make clean install
+}
 dependencies_and_dotfiles(){
     ./dependencies.sh
     ./use-dotfiles.sh
@@ -26,6 +30,7 @@ dependencies_and_dotfiles(){
 main(){
     dwm
     st
+    dmenu
     slock
     slstatus
     dependencies_and_dotfiles

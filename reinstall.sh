@@ -19,6 +19,12 @@ reinstall_slock(){
     sudo rm config.h
     sudo make clean install && cd ../
 }
+reinstall_dmenu(){
+    cd dmenu
+    sudo rm config.h
+    sudo make clean install && cd ../
+}
+
 main(){
     case $select in
     dwm)
@@ -34,13 +40,18 @@ main(){
         reinstall_slstatus
         ;;
     slock)
-        echo "reinstall slock"
+        echo "reinstall slock......"
         reinstall_slock
+        ;;
+    dmenu)
+        echo "reinstall dmenu......"
+        reinstall_dmenu
         ;;
     all)
         echo "reinstall all......"
         reinstall_dwm
         reinstall_st
+        reinstall_dmenu
         reinstall_slock
         reinstall_slstatus
         ;;
