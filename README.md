@@ -50,7 +50,7 @@ alt+F5          提升亮度
 alt+esc         打开位于屏幕正中的小终端，默认为st， 按第二遍隐藏 (挂个htop当任务管理器倒是不错)
 #标签、窗口类
 alt+shift+j/k   将栈中窗口挪到主窗口
-alt+left/right  切换前一个或下一个tag
+alt+shift+left/right  切换前一个或下一个tag
 alt+n           按住显示tagsalt里面的标签，我这里是显示是标签序号
 
 #窗口间隙相关
