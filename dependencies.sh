@@ -5,7 +5,7 @@ install(){
     sudo pacman -S nerd-fonts noto-fonts noto-fonts-cjk noto-fonts-emoji
     sudo pacman -S ttf-font-awesome otf-font-awesome awesome-terminal-fonts powerline-fonts ttf-sarasa-gothic
     # software package
-    sudo pacman -S picom feh numlockx xautolock dmenu rofi gd
+    sudo pacman -S picom feh numlockx xautolock rofi gd
     # fcitx5
     sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-material-color
     # icon
