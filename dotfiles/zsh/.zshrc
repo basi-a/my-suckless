@@ -107,26 +107,31 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
 fi
 
 source $ZSH/oh-my-zsh.sh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/nvm/init-nvm.sh
-
+if [ -f "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ];then
+	source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
+if [ -f "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" ];then
+	source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
+if [ -f "/usr/share/nvm/init-nvm.sh" ];then
+	(source /usr/share/nvm/init-nvm.sh &) > /dev/null 2>&1
+fi
 if [ -d "$HOME/go/bin" ];then
-  export PATH="$PATH:$HOME/go/bin"
-  export GOPROXY="https://proxy.golang.com.cn,direct"
+  (export PATH="$PATH:$HOME/go/bin" && \
+  export GOPROXY="https://proxy.golang.com.cn,direct" &) > /dev/null 2>&1
 fi
 if [ -d "/opt/flutter/bin" ];then
-  export PATH="$PATH:/opt/flutter/bin"
-  export CHROME_EXECUTABLE=$(where chromium)
-  export PUB_HOSTED_URL=https://pub.flutter-io.cn
-  export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+  (export PATH="$PATH:/opt/flutter/bin" && \
+  export CHROME_EXECUTABLE=$(where chromium) && \
+  export PUB_HOSTED_URL=https://pub.flutter-io.cn && \
+  export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn &) > /dev/null 2>&1
 fi
 if [ -d "$HOME/.cargo/bin" ];then
-  export PATH="$PATH:$HOME/.cargo/bin"
+  (export PATH="$PATH:$HOME/.cargo/bin" &) > /dev/null 2>&1
 fi
 
 if [ -d "$HOME/.local/bin" ];then
-  export PATH="$PATH:$HOME/.local/bin"
+  (export PATH="$PATH:$HOME/.local/bin" &) > /dev/null 2>&1
 fi
 
 if [ "$TERM" = "linux" ]; then
