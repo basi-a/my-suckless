@@ -13,4 +13,5 @@ wmname LG3D &
 xautolock -time 5 -locker slock &
 /usr/lib/pam_kwallet_init &
 # only use in my school
-sleep 3 && ${HOME}/.dwm/ccdx-wifi-connection-check.sh &
+sleep 2 && \
+${HOME}/go/bin/connection-check &
