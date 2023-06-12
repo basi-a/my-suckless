@@ -117,21 +117,21 @@ if [ -f "/usr/share/nvm/init-nvm.sh" ];then
 	(source /usr/share/nvm/init-nvm.sh &) > /dev/null 2>&1
 fi
 if [ -d "$HOME/go/bin" ];then
-  (export PATH="$PATH:$HOME/go/bin" && \
-  export GOPROXY="https://proxy.golang.com.cn,direct" &) > /dev/null 2>&1
+  export PATH="$PATH:$HOME/go/bin"
+  export GOPROXY="https://proxy.golang.com.cn,direct"
 fi
 if [ -d "/opt/flutter/bin" ];then
-  (export PATH="$PATH:/opt/flutter/bin" && \
-  export CHROME_EXECUTABLE=$(where chromium) && \
-  export PUB_HOSTED_URL=https://pub.flutter-io.cn && \
-  export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn &) > /dev/null 2>&1
+  export PATH="$PATH:/opt/flutter/bin"
+  export CHROME_EXECUTABLE=$(where chromium)
+  export PUB_HOSTED_URL=https://pub.flutter-io.cn
+  export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 fi
 if [ -d "$HOME/.cargo/bin" ];then
-  (export PATH="$PATH:$HOME/.cargo/bin" &) > /dev/null 2>&1
+  export PATH="$PATH:$HOME/.cargo/bin"
 fi
 
 if [ -d "$HOME/.local/bin" ];then
-  (export PATH="$PATH:$HOME/.local/bin" &) > /dev/null 2>&1
+  export PATH="$PATH:$HOME/.local/bin"
 fi
 
 if [ "$TERM" = "linux" ]; then
