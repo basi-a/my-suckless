@@ -1,5 +1,6 @@
 #!/bin/bash
 picom -b &
+$HOME/.screenlayout/dwm-vm-screenlayout.sh &
 while true; do
 	feh --bg-fill --randomize $HOME/.config/wallpaper/*
 	sleep 60

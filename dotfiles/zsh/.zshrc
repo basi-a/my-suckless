@@ -105,7 +105,9 @@ ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
-
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]];then
+	exec startx &>/dev/null
+fi
 source $ZSH/oh-my-zsh.sh
 if [ -f "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ];then
 	source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
