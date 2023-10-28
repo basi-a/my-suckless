@@ -1,5 +1,10 @@
-*.o
-*.orig
-*.rej
+x.c.orig
+config.def.h.orig
+config.def.h.rej
+st.o
+x.o
+Makefile.orig
+Makefile.rej
+config.mk.orig
+config.mk.rej
 config.h
-st
