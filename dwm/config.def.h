@@ -95,6 +95,7 @@ static const char *voldown[]  = { "amixer", "sset", "Master", "5%-", "unmute", N
 static const char *lightup[]  = { "light", "-A", "10", NULL };
 static const char *lightdown[]  = { "light", "-U", "10", NULL };
 static const char *roficmd[]  = { "rofi", "-show", "drun", NULL };
+static const char *musiccmd[]  = { "st", "-e", "musicfox", NULL };
 
 #include "exitdwm.c"
 static const Key keys[] = {
@@ -110,6 +111,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_F4,     spawn,          {.v = lightdown } },
 	{ MODKEY,                       XK_F5,     spawn,          {.v = lightup } },
 	{ MODKEY,                       XK_r,      spawn,          {.v = roficmd } },
+	{ MODKEY|ShiftMask,             XK_m,      spawn,          {.v = musiccmd } },
 	{ MODKEY,                       XK_Escape, togglescratch,  {.v = scratchpadcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
