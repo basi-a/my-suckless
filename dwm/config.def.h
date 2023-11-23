@@ -14,8 +14,8 @@ static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows sel
 static const unsigned int systrayspacing = 2;   /* systray spacing */
 static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
 static const int showsystray             = 1;   /* 0 means no systray */
-static const char *fonts[]          = { "SauceCodePro Nerd Font:size=12:style=Regular" };
-static const char dmenufont[]       = "SauceCodePro Nerd Font:size=12:style=Regular";
+static const char *fonts[]          = { "JetBrainsMono NF:size=12:style=Regular" };
+static const char dmenufont[]       = "JetBrainsMono NF:size=12:style=Regular";
 // default theme
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
