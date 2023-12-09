@@ -28,11 +28,11 @@ dependencies_and_dotfiles(){
     ./use-dotfiles.sh
 }
 main(){
+    dependencies_and_dotfiles
     dwm
     st
     dmenu
     slock
     slstatus
-    dependencies_and_dotfiles
 }
 main
