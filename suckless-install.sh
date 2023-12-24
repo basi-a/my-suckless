@@ -22,6 +22,7 @@ slstatus(){
 dmenu(){
     cd dmenu || exit
     sudo make clean install
+    cd ../
 }
 dependencies_and_dotfiles(){
     ./dependencies.sh
@@ -34,5 +35,6 @@ main(){
     dmenu
     slock
     slstatus
+    sudo cp dwm.desktop /usr/share/xsessions
 }
 main

@@ -5,11 +5,11 @@ install(){
     sudo pacman -S nerd-fonts noto-fonts noto-fonts-cjk noto-fonts-emoji
     sudo pacman -S ttf-font-awesome otf-font-awesome awesome-terminal-fonts powerline-fonts ttf-sarasa-gothic
     # software package
-    sudo pacman -S picom feh numlockx xautolock rofi gd
+    sudo pacman -S picom feh numlockx xautolock rofi gd alsa-utils
     # fcitx5
     sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-material-color
     # icon
-    paru -S papirus-icon-theme
+    sudo pacman -S papirus-icon-theme
     # nm-applet blueman-applet wmname
     sudo pacman -S network-manager-applet blueman wmname
     # gtk-theme paru pamac from archlinuxcn
