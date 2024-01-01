@@ -15,4 +15,5 @@ xautolock -time 60 -locker slock &
 /usr/lib/pam_kwallet_init &
 # only use in my school
 sleep 2 && \
+/usr/lib/polkit-kde-authentication-agent-1 &
 ${HOME}/go/bin/connection-check &
