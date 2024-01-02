@@ -14,6 +14,9 @@ install(){
     sudo pacman -S network-manager-applet blueman wmname
     # gtk-theme paru pamac from archlinuxcn
     sudo pacman -S vimix-gtk-themes paru pamac
+    sudo pacman -S thunderbird
+    
+    paru -S birdtray
 
     # if want get the "Time New Romen" font
     # paru -S ttf-ms-fonts
