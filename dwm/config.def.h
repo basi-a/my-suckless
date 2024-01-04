@@ -52,6 +52,7 @@ static const Rule rules[] = {
 	{ "wemeet",   NULL,       NULL,       0,            1,           -1 },
 	{ "virtualbox",   NULL,       NULL,       0,            1,           -1 },
 	{ "minecraft-launcher",   NULL,       NULL,       0,            1,           -1 },
+	{ "thunderbird",   NULL,       NULL,       0,            1,           -1 },
 };
 
 /* layout(s) */
