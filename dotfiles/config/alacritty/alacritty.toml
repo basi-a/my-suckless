@@ -1,0 +1,5 @@
+import = [
+    "~/.config/alacritty/theme/dracula.toml",
+    "~/.config/alacritty/fonts/fonts.toml",
+    "~/.config/alacritty/other/other.toml",
+]
