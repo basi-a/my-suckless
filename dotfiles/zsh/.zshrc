@@ -119,7 +119,7 @@ if [ -d "$HOME/go/bin" ];then
   export PATH="$PATH:$HOME/go/bin"
   export GO111MODULE="auto"
   export GOPROXY="https://goproxy.io,direct"
-  export CGO_ENABLED="1"
+  export CGO_ENABLED="0"
 fi
 if [ -d "/opt/flutter/bin" ];then
   export PATH="$PATH:/opt/flutter/bin"

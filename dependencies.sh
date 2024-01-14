@@ -17,9 +17,11 @@ install(){
     sudo pacman -S thunderbird
     
     paru -S birdtray
-
+    sudo pacman -S alacritty
+    sudo pacman -S zsh-syntax-highlighting zsh-autosuggestions
+    paru -S oh-my-zsh-git
     # if want get the "Time New Romen" font
-    # paru -S ttf-ms-fonts
+    paru -S ttf-ms-fonts
 }
 main(){
     install
