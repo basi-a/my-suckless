@@ -18,3 +18,4 @@ sleep 2 && \
 /usr/lib/polkit-kde-authentication-agent-1 &
 birdtray &
 ${HOME}/go/bin/connection-check &
+$(pwd)/ups.sh &
