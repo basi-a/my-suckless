@@ -96,7 +96,7 @@ static const char *voldown[]  = { "amixer", "sset", "Master", "5%-", "unmute", N
 static const char *lightup[]  = { "light", "-A", "10", NULL };
 static const char *lightdown[]  = { "light", "-U", "10", NULL };
 static const char *roficmd[]  = { "rofi", "-show", "drun", NULL };
-static const char *musiccmd[]  = { "st", "-e", "musicfox", NULL };
+static const char *musiccmd[]  = { "alacritty", "-e", "musicfox", NULL };
 
 #include "exitdwm.c"
 static const Key keys[] = {
