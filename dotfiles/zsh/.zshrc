@@ -100,6 +100,7 @@ plugins=(git)
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias lg="lazygit"
 alias ld="lazydocker"
+alias hx="helix"
 export TERM="xterm-256color"
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
