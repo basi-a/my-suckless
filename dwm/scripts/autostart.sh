@@ -13,5 +13,6 @@ wmname LG3D &
 sleep 2 && \
 /usr/lib/polkit-kde-authentication-agent-1 &
 birdtray &
+nm-applet &
 dunst &
 source ups.sh
