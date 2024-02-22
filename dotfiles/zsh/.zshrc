@@ -102,6 +102,7 @@ alias lg="lazygit"
 alias ld="lazydocker"
 alias hx="helix"
 export TERM="xterm-256color"
+export EDITOR="helix"
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR

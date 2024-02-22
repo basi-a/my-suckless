@@ -4,7 +4,7 @@
 之前分的好几个仓库就都删除了;
 以下操作确保当前用户是可以使用sudo提权的普通用户
 ##  依赖和dotfile
-前提是添加好了archlinuxcn源
+前提是添加好了archlinuxcn源, 没加的话执行一下这个脚本`add-archlinuxcn.sh`
 ```bash
 cd my-suckless
 # 依赖
@@ -48,12 +48,12 @@ alt+F3          增大音量
 alt+F4          降低亮度
 alt+F5          提升亮度
 alt+esc         打开位于屏幕正中的小终端，默认为st， 按第二遍隐藏 (挂个htop当任务管理器倒是不错)
-#标签、窗口类
+//标签、窗口类
 alt+shift+j/k   将栈中窗口挪到主窗口
 alt+shift+left/right  切换前一个或下一个tag
 alt+n           按住显示tagsalt里面的标签，我这里是显示是标签序号
 
-#窗口间隙相关
+//窗口间隙相关
 Alt+Super+0         打开和关闭间隙
 Alt+Super+Shift+0   将间隙重置为默认值
 Alt+Super+h         增加所有差距
