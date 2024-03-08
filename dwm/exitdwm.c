@@ -69,7 +69,7 @@ void exitdwm ()
 	else if (strcmp (exit_action, S_RESTART_DWM) == 0) quit (& (const Arg) {1});
 	else if (strcmp (exit_action, S_OFFSCREEN) == 0) system ("sleep .5; xset dpms force off");
 	else if (strcmp (exit_action, S_EXIT) == 0) quit (& (const Arg) {0});
-	else if (strcmp (exit_action, S_SLEEP) == 0) system ("slock & sleep .5; xset dpms force off; systemctl hybrid-sleep");
+	else if (strcmp (exit_action, S_SLEEP) == 0) system ("slock & sleep .5; systemctl suspend");
 	else if (strcmp (exit_action, S_REBOOT) == 0) system ("systemctl reboot");
 	else if (strcmp (exit_action, S_SHUTDOWN) == 0) system ("systemctl poweroff -i");
 
