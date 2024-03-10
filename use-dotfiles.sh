@@ -9,6 +9,7 @@ ln-sf(){
     ln -sf $path/dotfiles/.xinitrc $HOME/.xinitrc
     ln -sf $path/dotfiles/.xprofile $HOME/.xprofile
     sudo ln -sf $path/dotfiles/zsh/dracula.zsh-theme /usr/share/oh-my-zsh/themes/dracula.zsh-theme
+    sudo ln -sf $path/dotfiles/systemd/* /etc/systemd/system
 }
 makedir(){
     if [ ! -d "$HOME/.config" ];then

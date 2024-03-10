@@ -1,0 +1,9 @@
+[Unit]
+Description=Set hid_apple fnmode
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c 'echo 2 > /sys/module/hid_apple/parameters/fnmode'
+
+[Install]
+WantedBy=multi-user.target
