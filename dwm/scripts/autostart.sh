@@ -15,4 +15,5 @@ sleep 2 && \
 birdtray &
 nm-applet &
 dunst &
+source brightness.sh
 source ups.sh

@@ -92,13 +92,14 @@ static const char *slockcmd[]  = { "slock", NULL };
 //static const char *browsercmd[]  = { "chromium", NULL };
 static const char *browsercmd[]  = { "google-chrome-stable", NULL };
 static const char *screanshotcmd[]  = { "flameshot", "gui", NULL };
-static const char *voltoggle[]  = { "amixer", "sset", "Master", "toggle", NULL };
-static const char *volup[]  = { "amixer", "sset", "Master", "5%+", "unmute", NULL };
-static const char *voldown[]  = { "amixer", "sset", "Master", "5%-", "unmute", NULL };
+static const char *voltoggle[]  = { "vol-toggle.sh", NULL };
+static const char *volup[]  = { "vol-up.sh", NULL };
+static const char *voldown[]  = { "vol-down.sh", NULL };
 static const char *lightup[]  = { "light", "-A", "10", NULL };
 static const char *lightdown[]  = { "light", "-U", "10", NULL };
+static const char *ddclightup[]  = { "ddcutil-up.sh", NULL };
+static const char *ddclightdown[]  = { "ddcutil-down.sh", NULL };
 static const char *roficmd[]  = { "rofi", "-show", "drun", NULL };
-static const char *musiccmd[]  = { "alacritty","-T" ,"musicfox", "-e", "musicfox", NULL };
 static const char *fileexplorercmd[]  = { "thunar", NULL };
 
 #include "exitdwm.c"
@@ -114,8 +115,9 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_F3,     spawn,          {.v = volup } },
 	{ MODKEY,                       XK_F4,     spawn,          {.v = lightdown } },
 	{ MODKEY,                       XK_F5,     spawn,          {.v = lightup } },
+	{ MODKEY|ShiftMask,             XK_F4,     spawn,          {.v = ddclightdown } },
+	{ MODKEY|ShiftMask,             XK_F5,     spawn,          {.v = ddclightup } },
 	{ MODKEY,                       XK_r,      spawn,          {.v = roficmd } },
-	{ MODKEY|ShiftMask,             XK_m,      spawn,          {.v = musiccmd } },
 	{ MODKEY,			XK_e,	   spawn,	   {.v = fileexplorercmd}},
 	{ MODKEY,                       XK_Escape, togglescratch,  {.v = scratchpadcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
