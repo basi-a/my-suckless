@@ -11,7 +11,7 @@ install(){
     # icon
     sudo pacman -S papirus-icon-theme
     # nm-applet blueman-applet wmname
-    sudo pacman -S network-manager-applet blueman wmname
+    sudo pacman -S network-manager-applet blueman wmname autorandr
     # gtk-theme paru pamac from archlinuxcn
     sudo pacman -S vimix-gtk-themes paru pamac
     sudo pacman -S thunderbird

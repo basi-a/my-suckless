@@ -67,6 +67,6 @@ static const struct arg args[] = {
 	/* function 	format          argument */ 
 	{ run_command,  "[󰪛 %s]", "xset q | grep \"Caps Lock\" | awk '{if ($4==\"off\"){print \"N\"}else{print \"Y\"}}'"},
 	{ run_command, 	"[%s]",		"amixer get Master | tail -1 | awk -F'[][]' '{if($4==\"on\"){print \"󰕾 \"$2}else{print \"󰖁 \"$2}}'" },
-	{ run_command,	"[ %s]",	"ddcutil getvcp 10 | tr -s ',' ' ' | awk '{print $9}'"},
-	{ datetime, 	"[ %s]",      	"%A %m/%d %R" },
+	{ run_command,	"[ %s]",	"ddcutil getvcp 10 | tr -s ',' ' ' | awk '{print $9}'"},
+	{ datetime, 	"[ %s]",      	"%A %m/%d %R" },
 };

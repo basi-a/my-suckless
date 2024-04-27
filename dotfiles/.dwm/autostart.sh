@@ -1,4 +1,5 @@
 #!/bin/bash
+autorandr -c &
 picom -b &
 while true; do
 	feh --bg-fill --randomize $HOME/.config/wallpaper/*

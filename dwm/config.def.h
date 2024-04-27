@@ -16,8 +16,9 @@ static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows sel
 static const unsigned int systrayspacing = 3;   /* systray spacing */
 static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
 static const int showsystray             = 1;   /* 0 means no systray */
-static const char *fonts[]          = { "JetBrainsMono NF:size=12:style=Regular" };
-static const char dmenufont[]       = "JetBrainsMono NF:size=12:style=Regular";
+static const char *fonts[]          = {	"JetBrainsMono Nerd Font Mono:pixelsize=18:style=Regular" };
+static const char dmenufont[]       = "JetBrainsMono Nerd Font Mono:pixelsize=18:style=Regular";
+
 // default theme
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
@@ -38,9 +39,9 @@ static const unsigned int alphas[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "", "󰨞", "󰨞", "󰨞", "","","","","󰃂" };
 static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-static const int momentaryalttags = 1; /* 1 means alttags will show only when key is held down*/
+static const int momentaryalttags = 0; /* 1 means alttags will show only when key is held down*/
 
 static const Rule rules[] = {
 	/* xprop(1):
