@@ -7,7 +7,7 @@ install(){
     # software package
     sudo pacman -S picom feh numlockx xautolock rofi gd alsa-utils thunar
     # fcitx5
-    sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-material-color
+    sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-material-color fcitx5-nord
     # icon
     sudo pacman -S papirus-icon-theme
     # nm-applet blueman-applet wmname
