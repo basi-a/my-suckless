@@ -98,8 +98,6 @@ static const char *volup[]  = { "vol-up.sh", NULL };
 static const char *voldown[]  = { "vol-down.sh", NULL };
 static const char *lightup[]  = { "light", "-A", "10", NULL };
 static const char *lightdown[]  = { "light", "-U", "10", NULL };
-static const char *ddclightup[]  = { "ddcutil-up.sh", NULL };
-static const char *ddclightdown[]  = { "ddcutil-down.sh", NULL };
 static const char *roficmd[]  = { "rofi", "-show", "drun", NULL };
 static const char *fileexplorercmd[]  = { "thunar", NULL };
 
@@ -116,8 +114,6 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_F3,     spawn,          {.v = volup } },
 	{ MODKEY,                       XK_F4,     spawn,          {.v = lightdown } },
 	{ MODKEY,                       XK_F5,     spawn,          {.v = lightup } },
-	{ MODKEY|ShiftMask,             XK_F4,     spawn,          {.v = ddclightdown } },
-	{ MODKEY|ShiftMask,             XK_F5,     spawn,          {.v = ddclightup } },
 	{ MODKEY,                       XK_r,      spawn,          {.v = roficmd } },
 	{ MODKEY,			XK_e,	   spawn,	   {.v = fileexplorercmd}},
 	{ MODKEY,                       XK_Escape, togglescratch,  {.v = scratchpadcmd } },

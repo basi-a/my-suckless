@@ -44,10 +44,8 @@ install: all
 	sed "s/VERSION/${VERSION}/g" < dwm.1 > ${DESTDIR}${MANPREFIX}/man1/dwm.1
 	chmod 644 ${DESTDIR}${MANPREFIX}/man1/dwm.1
 	cp -f scripts/bin/vol* ${DESTDIR}${PREFIX}/bin 
-	cp -f scripts/bin/dcc* ${DESTDIR}${PREFIX}/bin 
 uninstall:
 	rm -f ${DESTDIR}${PREFIX}/bin/dwm\
 		${DESTDIR}${MANPREFIX}/man1/dwm.1\
-		${DESTDIR}${PREFIX}/bin/vol*\
-		${DESTDIR}${PREFIX}/bin/dcc*
+		${DESTDIR}${PREFIX}/bin/vol*
 .PHONY: all options clean dist install uninstall
