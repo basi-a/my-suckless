@@ -35,6 +35,7 @@ main(){
     dmenu
     slock
     slstatus
+    sudo mkdir /usr/share/xsessions
     sudo cp dwm.desktop /usr/share/xsessions
 }
 main
