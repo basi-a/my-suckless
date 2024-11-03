@@ -101,14 +101,10 @@ plugins=(git)
 alias lg="lazygit"
 alias ld="lazydocker"
 alias hx="helix"
-export TERM="xterm-256color"
 export EDITOR="nvim"
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
-fi
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]];then
-	exec startx &>/dev/null
 fi
 source $ZSH/oh-my-zsh.sh
 if [ -f "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ];then
