@@ -126,6 +126,8 @@ if [ -d "/opt/flutter/bin" ];then
   export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 fi
 if [ -d "$HOME/.cargo/bin" ];then
+  export RUSTUP_DIST_SERVER="https://rsproxy.cn"
+  export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
   export PATH="$PATH:$HOME/.cargo/bin"
 fi
 
