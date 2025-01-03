@@ -98,10 +98,10 @@ plugins=(git)
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias lg="lazygit"
-alias ld="lazydocker"
+alias lzg="lazygit"
+alias lzd="lazydocker"
 alias hx="helix"
-export EDITOR="nvim"
+EDITOR="nvim"
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
@@ -114,7 +114,7 @@ if [ -f "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" ];t
 	source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
 if [ -d "$HOME/go/bin" ];then
-  export PATH="$PATH:$HOME/go/bin"
+  export PATH="$PATH:$HOME/go/bin:/usr/local/go/bin"
   export GO111MODULE="auto"
   export GOPROXY="https://goproxy.cn,direct"
   export CGO_ENABLED="1"
@@ -135,10 +135,9 @@ if [ -d "$HOME/.local/bin" ];then
   export PATH="$PATH:$HOME/.local/bin"
 fi
 
-[ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
-source /usr/share/nvm/nvm.sh
-source /usr/share/nvm/bash_completion
-source /usr/share/nvm/install-nvm-exec
+if [ -d "/usr/share/nvm" ];then
+  source /usr/share/nvm/init-nvm.sh
+fi
 
 export FZF_DEFAULT_OPTS='--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4'
 
